@@ -56,10 +56,10 @@ next
 close #1
 
 endTime = timer - startTime
+print "Completed the search in :"; endTime; " seconds."
 open "output.dat" for output as #1
 for outputNum as integer = 1 to testNum
     print #1, totalMatch(outputNum)
 next
 close #1
-print "Completed the search in :"; endTime; " seconds."
 sleep
